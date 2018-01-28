@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  `
+  <header class="page-header">
+    <a class="page-header__logo-link">
+                <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="sedona" >
+            </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle-open">Открыть</button>
+      <button class="main-nav__toggle-close">Закрыть</button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">HTML academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-main__welcome-block">
+      <img class="page-main__welcome-background" src="http://placehold.it/320x390" alt="sedona-welcome">
+    </section>
+    <section class="page-main__advantages">
+      <h1 class="advantages__title"> Седона - небольшой городок в Аризоне, заслуживающий большего!
+            </h1>
+      <p class="advantages__statement"> Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!
+      </p>
+      <ul class="advantages__list">
+        <!-- Откуда взялся элемент .advantages-list__item? У тебя нет блока .advantages-list. Вероятно, его надо смешать с .page-main__advantages-list, чтобы получилось .page-main__advantages-list.advantages-list.
+                  НЕ ОЧЕНЬ ПОНЯЛ, что за класс такой будет?..
+                  написал ниже, как казлось правильным.
+
+                -->
+
+        <li class="advantages__item
+                advantages__item--blue">
+          <h2 class="advantages__item-title">Настоящий городок
+                  </h2>
+          <p class="advantages__item-message"> - №1 -
+            <br> Седона не аттракцион для туристов, там течет своя жизнь
+          </p>
+          <img class="advantages__truetown" src="http://placehold.it/520x260">
+          <ul class="advantages__truetown-list">
+            <!-- Опять нет блока -->
+            <li class="advantages__truetown-item advantages__truetown-item--home">
+              <!-- Тут и в куче других мест что-то напутал в нэйминге. Как правильно, смотри тут -- https://ru.bem.info/methodology/naming-convention/ -->
+              <!-- Вероятно, должно получиться как-то так: -->
+              <!-- <h3 class="truetown-list__item-title">...</h3> -->
+              <!-- <p class="truetown-list__item-message">...</p> -->
+              <!-- Т.е. в блоке .truetown-list будут лежать два элемента: .truetown-list__item-title и .truetown-list__item-message. -->
+              <!-- У тебя же в классе .truetown-list__item__message как-будто бы два элемента(item и message), а это запрещено правилами -- https://up.htmlacademy.ru/adaptive/13/criteries#basic-5 -->
+              <h3 class="advantages__truetown-feature">Жилье</h3>
+              <p class="advantages__truetown-message">Рекомендуем пожить в настоящем мотеле,все как в кино!
+              </p>
+            </li>
+            <li class="advantages__truetown-item advantages__truetown-item--souvenirs">
+              <h3 class="advantages__truetown-feature">Сувениры</h3>
+              <p class="advantages__truetown-message">Не только китайского, но и местного производства!
+              </p>
+            </li>
+            <li class="advantages__truetown-item advantages__truetown-item--food">
+              <h3 class="advantages__truetown-feature">Еда</h3>
+              <p class="advantages__truetown-message">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+          </ul>
+        </li>
+        <!-- Нет кавычек вокруг класса. Sublime подсвечивает кое-какой синтаксис и такие ошибка, обычно, бросаются в глаза. Но можешь попробовать поставить http://www.sublimelinter.com/en/latest/about.html . Сам я не смог запустить его, но вдруг у тебя получится. :) -->
+        <li class="advantages__item advantages__item--blue">
+          <h2 class="advantages__item-title">Там есть мост дьявола
+              </h2>
+          <p class="advantages__item-message"> - №2 -
+            <br> Да, по нему можно пройти, если вы осмелитесь, конечно
+          </p>
+          <img class="advantages__davil-bridge" src="http://placehold.it/520x260">
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__item-title">Небольшая площадь
+          </h2>
+          <p class="advantages__item-message"> - №3 -
+            <br> Все интересные места находятся очень близко
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__item-title">Красивая дорога
+      </h2>
+          <p class="advantages__item-message"> - №4 -
+            <br> Ехать в седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </li>
+        <li class="advantages__item">
+          <h2 class="advantages__item-title">Мало туристов
+  </h2>
+          <p class="advantages__item-message"> - №4 -
+            <br> Большинство едет в Гранд-Каньон и толпится там
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="page-main__user-interested">
+      <p class="user-interested__description">
+        <span class="user-interested__title">Заинтересовались?</span>
+        <br> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <button class="user-interested__find-place">Найти гостиницу</button>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664000.4452313462!2d-112.3087515535074!3d35.4547729021094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1516924156554"
+      width="320" height="350" frameborder="0" style="border:0"></iframe>
+
+  </main>
+  <footer class="page-footer">
+    <b class="page-footer__title">#visitsedona</b>
+    <div class="page-footer__social">
+      <ul class="page-footer__social__list">
+        <!-- Не бойся заводить лишние блоки. Чаще всего, правило такое: элемент (не в терминах БЭМ, а в обычном смысле слова) повторяется -- его нужно делать блоком. Есть исключения, но в основном принцип такой. -->
+        <!-- Блоки ниже я бы сделал так:-->
+
+        <!-- <li class="page-footer__social-item social-item"> -->
+        <!-- <a class="social-item__link social-item__link&#45;&#45;twitter" href="">[twitter icon] -->
+        <!-- </a> -->
+        <!-- </li> -->
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--twitter" href="">[twitter icon]
+                        </a>
+        </li>
+        <li class="page-footer__social__item social-item">
+          <a class="social-item__link--fb" href="">[fb icon]
+                        </a>
+        </li>
+        <li class="page-footer__social__item social-item">
+          <a class="social-item__link--youtube" href="">[youtube icon]
+                        </a>
+        </li>
+      </ul>
+      <!-- Нельзя вкладывать тэг параграфа в список -->
+    </div>
+    <div class="page-footer__copyright">
+      <b class="copyright__text">Разработано
+                </b>
+      <a class="copyright__link copyright" href="https://htmlacademy.ru/">[thml academy icon]
+                </a>
+    </div>
+  </footer>
+
+<!--test checking folder in archive -->
+</body>
+
 </html>

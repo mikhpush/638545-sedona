@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  `
+  <header class="page-header">
+    <a class="page-header__logo-link">
+                <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="sedona" >
+            </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle-open">Открыть</button>
+      <button class="main-nav__toggle-close">Закрыть</button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">HTML academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-main__welcome-block">
+      <img class="page-main__welcome-background page-main__welcome-background--position-top" src="http://placehold.it/320x390" alt="sedona-welcome">
+    </section>
+    <section class="page-main__photo-video">
+      <h1 class="photo-video__title"> Фото и Видео
+			</h1>
+      <p class="photo-video__statement"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+      <article class="photo-video__free-land">
+        <img class="free-land__image" src="http://placehold.it/280x282" alt="free-land-sedona">
+        <br>
+        <b class="free-land__title">Народные просторы
+				</b>
+        <p class="free-land__author">Автор фото: Борис
+        </p>
+        <span class="photo-video__like">1350</span>
+      </article>
+
+      <article class="photo-video__local-flora">
+        <img class="local-flora__image" src="http://placehold.it/280x282" alt="local-flora-sedona">
+        <br>
+        <b class="local-flora__title">
+					Местная растительность
+				</b>
+        <p class="local-flora__author">Автор фото: Сергей
+        </p>
+        <span class="photo-video__like">143</span>
+      </article>
+
+      <article class="photo-video__road-north">
+        <img class="road-north__image" src="http://placehold.it/280x282" alt="road-north-sedona">
+        <br>
+        <b class="road-north__title">
+					Дорога на север
+				</b>
+        <p class="road-north__author">Автор фото: Петр
+        </p>
+        <span class="photo-video__like">96</span>
+      </article>
+
+      <article class="photo-video__davil-bridge">
+        <img class="davil-bridge__image" src="http://placehold.it/280x282" alt="davil-bridge-sedona">
+        <br>
+        <b class="davil-bridge__title">
+					Мост дьявола
+				</b>
+        <p class="davil-bridge__author">Автор фото: Антон
+        </p>
+        <span class="photo-video__like">254</span>
+      </article>
+    </section>
+
+    <section class="page-main__no-doubt">
+      <b class="no-doubt__title">Все еще сомневаетесь?
+			</b>
+      <p class="no-doubt__statement">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+      <video class="no-doubt__video" controls preload="metadata" width="320" height="290" poster="http://placehold.it/300x270">
+
+			</video>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <b class="page-footer__title">#visitsedona</b>
+    <div class="page-footer__social">
+      <ul class="page-footer__social__list">
+        <!-- Не бойся заводить лишние блоки. Чаще всего, правило такое: элемент (не в терминах БЭМ, а в обычном смысле слова) повторяется -- его нужно делать блоком. Есть исключения, но в основном принцип такой. -->
+        <!-- Блоки ниже я бы сделал так:-->
+
+        <!-- <li class="page-footer__social-item social-item"> -->
+        <!-- <a class="social-item__link social-item__link&#45;&#45;twitter" href="">[twitter icon] -->
+        <!-- </a> -->
+        <!-- </li> -->
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--twitter" href="">[twitter icon]
+                    </a>
+        </li>
+        <li class="page-footer__social__item social-item">
+          <a class="social-item__link--fb" href="">[fb icon]
+                    </a>
+        </li>
+        <li class="page-footer__social__item social-item">
+          <a class="social-item__link--youtube" href="">[youtube icon]
+                    </a>
+        </li>
+      </ul>
+      <!-- Нельзя вкладывать тэг параграфа в список -->
+    </div>
+    <div class="page-footer__copyright">
+      <b class="copyright__text">Разработано
+            </b>
+      <a class="copyright__link copyright" href="https://htmlacademy.ru/">[thml academy icon]
+            </a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
