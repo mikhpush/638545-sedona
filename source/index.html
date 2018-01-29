@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  `
+
   <header class="page-header">
     <a class="page-header__logo-link">
                 <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="sedona" >
@@ -17,17 +17,17 @@
       <button class="main-nav__toggle-close">Закрыть</button>
 
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+        <ul class="main-nav__list main-menu">
+          <li class="main-menu__item main-menu__item--active">
             <a href="">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-menu__item">
             <a href="">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-menu__item">
             <a>Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-menu__item">
             <a href="">HTML academy</a>
           </li>
         </ul>
@@ -36,82 +36,78 @@
   </header>
 
   <main class="page-main">
-    <section class="page-main__welcome-block">
-      <img class="page-main__welcome-background" src="http://placehold.it/320x390" alt="sedona-welcome">
+    <section class="welcome-block">
+      <img class="welcome-block__welcome-background welcome-block__welcome-background--position-top" src="http://placehold.it/320x390" alt="sedona-welcome">
     </section>
-    <section class="page-main__advantages">
+    <section class="advantages">
       <h1 class="advantages__title"> Седона - небольшой городок в Аризоне, заслуживающий большего!
             </h1>
       <p class="advantages__statement"> Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!
       </p>
-      <ul class="advantages__list">
-        <!-- Откуда взялся элемент .advantages-list__item? У тебя нет блока .advantages-list. Вероятно, его надо смешать с .page-main__advantages-list, чтобы получилось .page-main__advantages-list.advantages-list.
-                  НЕ ОЧЕНЬ ПОНЯЛ, что за класс такой будет?..
-                  написал ниже, как казлось правильным.
-
-                -->
-
-        <li class="advantages__item
-                advantages__item--blue">
-          <h2 class="advantages__item-title">Настоящий городок
+      <ul class="advantages-list">
+        <li class="advantages-list__item
+                advantages-list__item--emphasized single-advantage">
+          <h2 class="advantages-list__item-title">Настоящий городок
                   </h2>
-          <p class="advantages__item-message"> - №1 -
-            <br> Седона не аттракцион для туристов, там течет своя жизнь
+          <div class="advantages-list__andvantage-number"> - №1 -
+          </div>
+          <p class="advantages-lits__item-message">
+             Седона не аттракцион для туристов, там течет своя жизнь
           </p>
-          <img class="advantages__truetown" src="http://placehold.it/520x260">
-          <ul class="advantages__truetown-list">
-            <!-- Опять нет блока -->
-            <li class="advantages__truetown-item advantages__truetown-item--home">
-              <!-- Тут и в куче других мест что-то напутал в нэйминге. Как правильно, смотри тут -- https://ru.bem.info/methodology/naming-convention/ -->
-              <!-- Вероятно, должно получиться как-то так: -->
-              <!-- <h3 class="truetown-list__item-title">...</h3> -->
-              <!-- <p class="truetown-list__item-message">...</p> -->
-              <!-- Т.е. в блоке .truetown-list будут лежать два элемента: .truetown-list__item-title и .truetown-list__item-message. -->
-              <!-- У тебя же в классе .truetown-list__item__message как-будто бы два элемента(item и message), а это запрещено правилами -- https://up.htmlacademy.ru/adaptive/13/criteries#basic-5 -->
-              <h3 class="advantages__truetown-feature">Жилье</h3>
-              <p class="advantages__truetown-message">Рекомендуем пожить в настоящем мотеле,все как в кино!
+          <img class="advantages-list__truetow-pic" src="http://placehold.it/520x260">
+          <ul class="advantages-list__truetown-list truetown-list">
+            <li class="advantages-list__truetown-item advantages__truetown-item--home">
+              <h3 class="advantages-list__truetown-feature">Жилье</h3>
+              <p class="advantages-list__truetown-message">Рекомендуем пожить в настоящем мотеле,все как в кино!
               </p>
             </li>
-            <li class="advantages__truetown-item advantages__truetown-item--souvenirs">
-              <h3 class="advantages__truetown-feature">Сувениры</h3>
-              <p class="advantages__truetown-message">Не только китайского, но и местного производства!
+            <li class="advantages-list__truetown-item advantages__truetown-item--souvenirs">
+              <h3 class="advantage-list__truetown-feature">Сувениры</h3>
+              <p class="advantages-list__truetown-message">Не только китайского, но и местного производства!
               </p>
             </li>
-            <li class="advantages__truetown-item advantages__truetown-item--food">
-              <h3 class="advantages__truetown-feature">Еда</h3>
-              <p class="advantages__truetown-message">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            <li class="advantages-list__truetown-item advantages__truetown-item--food">
+              <h3 class="advantages-list__truetown-feature">Еда</h3>
+              <p class="advantages-list__truetown-message">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
           </ul>
         </li>
-        <!-- Нет кавычек вокруг класса. Sublime подсвечивает кое-какой синтаксис и такие ошибка, обычно, бросаются в глаза. Но можешь попробовать поставить http://www.sublimelinter.com/en/latest/about.html . Сам я не смог запустить его, но вдруг у тебя получится. :) -->
-        <li class="advantages__item advantages__item--blue">
-          <h2 class="advantages__item-title">Там есть мост дьявола
+        <li class="advantages-list__item advantages-list__item--emphasized single-advantage">
+          <h2 class="advantages-list__item-title">Там есть мост дьявола
               </h2>
-          <p class="advantages__item-message"> - №2 -
-            <br> Да, по нему можно пройти, если вы осмелитесь, конечно
+          <div class="advantages-list__andvantage-number"> - №2 -
+          </div>
+          <p class="advantages-list__item-message">
+             Да, по нему можно пройти, если вы осмелитесь, конечно
           </p>
-          <img class="advantages__davil-bridge" src="http://placehold.it/520x260">
+          <img class="advantages-list__davil-bridge" src="http://placehold.it/520x260">
         </li>
-        <li class="advantages__item">
-          <h2 class="advantages__item-title">Небольшая площадь
+        <li class="advantages-list__item single-advantage">
+          <h2 class="advantages-list__item-title">Небольшая площадь
           </h2>
-          <p class="advantages__item-message"> - №3 -
-            <br> Все интересные места находятся очень близко
+          <div class="advantages-list__andvantage-number"> - №3 -
+          </div>
+          <p class="advantages-list__item-message">
+            Все интересные места находятся очень близко
           </p>
         </li>
-        <li class="advantages__item">
-          <h2 class="advantages__item-title">Красивая дорога
-      </h2>
-          <p class="advantages__item-message"> - №4 -
-            <br> Ехать в седону из Лас-Вегаса совсем не скучно!
+        <li class="advantages-list__item single-advantage">
+          <h2 class="advantages-list__item-title">Красивая дорога
+          </h2>
+          <div class="advantages-list__andvantage-number"> - №4 -
+          </div>
+          <p class="advantages-list__item-message">
+             Ехать в седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
-        <li class="advantages__item">
-          <h2 class="advantages__item-title">Мало туристов
-  </h2>
-          <p class="advantages__item-message"> - №4 -
-            <br> Большинство едет в Гранд-Каньон и толпится там
+        <li class="advantages-list__item single-advantage">
+          <h2 class="advantages-list__item-title">Мало туристов
+          </h2>
+          <div class="advantages-list__andvantage-number"> - №5 -
+          </div>
+          <p class="advantages-list__item-message">
+            Большинство едет в Гранд-Каньон и толпится там
           </p>
         </li>
       </ul>
@@ -127,41 +123,35 @@
       width="320" height="350" frameborder="0" style="border:0"></iframe>
 
   </main>
+
   <footer class="page-footer">
     <b class="page-footer__title">#visitsedona</b>
     <div class="page-footer__social">
-      <ul class="page-footer__social__list">
-        <!-- Не бойся заводить лишние блоки. Чаще всего, правило такое: элемент (не в терминах БЭМ, а в обычном смысле слова) повторяется -- его нужно делать блоком. Есть исключения, но в основном принцип такой. -->
-        <!-- Блоки ниже я бы сделал так:-->
+      <ul class="page-footer__social-list">
 
-        <!-- <li class="page-footer__social-item social-item"> -->
-        <!-- <a class="social-item__link social-item__link&#45;&#45;twitter" href="">[twitter icon] -->
-        <!-- </a> -->
-        <!-- </li> -->
         <li class="page-footer__social-item social-item">
           <a class="social-item__link social-item__link--twitter" href="">[twitter icon]
                         </a>
         </li>
-        <li class="page-footer__social__item social-item">
-          <a class="social-item__link--fb" href="">[fb icon]
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--fb" href="">[fb icon]
                         </a>
         </li>
-        <li class="page-footer__social__item social-item">
-          <a class="social-item__link--youtube" href="">[youtube icon]
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--youtube" href="">[youtube icon]
                         </a>
         </li>
       </ul>
-      <!-- Нельзя вкладывать тэг параграфа в список -->
+
     </div>
-    <div class="page-footer__copyright">
+    <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано
                 </b>
-      <a class="copyright__link copyright" href="https://htmlacademy.ru/">[thml academy icon]
+      <a class="copyright__link" href="https://htmlacademy.ru/">[thml academy icon]
                 </a>
     </div>
   </footer>
 
-<!--test checking folder in archive -->
 </body>
 
 </html>

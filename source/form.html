@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  `
+
   <header class="page-header">
     <a class="page-header__logo-link">
                 <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="sedona" >
@@ -17,17 +17,17 @@
       <button class="main-nav__toggle-close">Закрыть</button>
 
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+        <ul class="main-nav__list main-menu">
+          <li class="main-menu__item main-menu__item--active">
             <a href="">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-menu__item">
             <a href="">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-menu__item">
             <a>Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-menu__item">
             <a href="">HTML academy</a>
           </li>
         </ul>
@@ -36,42 +36,42 @@
   </header>
 
   <main class="page-main">
-    <section class="page-main__welcome-block">
-      <img class="page-main__welcome-background page-main__welcome-background--position-top" src="http://placehold.it/320x390" alt="sedona-welcome">
+    <section class="welcome-block">
+      <img class="welcome-block__welcome-background welcome-block__welcome-background--position-top" src="http://placehold.it/320x390" alt="sedona-welcome">
     </section>
-    <section class="page-main__feedback-greetings">
+    <section class="feedback-greetings">
       <b class="feedback-greetings__title"> Оставьте свой отзыв
                 </b>
       <p class="feedback-greetings__statement">Помогите нашим отеля стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </section>
-    <section class="page-main__feedback-info">
+    <section class="feedback-info">
 
       <form action="https://echo.htmlacademy.ru" method="post">
         <b class="feedback-info__title">Представьтесь:
                     </b>
         <br>
-        <input class="feedback-info__name" type="text" name="name" required id="name-id">
+        <input class="feedback-info__text-field" type="text" name="name" required id="name-id">
         <label class="feedback-info__label" for="name-id">Имя*:</label>
         <br>
 
-        <input class="feedback-info__surname" type="text" name="surname" required id="surname-id">
+        <input class="feedback-info__text-field" type="text" name="surname" required id="surname-id">
         <label class="feedback-info__label" for="surname-id">Фамилия*:</label>
         <br>
 
-        <input class="feedback-info__patronomic" type="text" name="patronomic" id="patronomic-id">
+        <input class="feedback-info__text-field" type="text" name="patronomic" id="patronomic-id">
         <label class="feedback-info__label" for="patronomic-id">Отчество*:</label>
         <br>
         <b class="feedback-info__contacts">Контактная информация:
                     </b>
         <br>
         <label class="feedback-info__label" for="tel-id">Контактный телефон*
-                            <input class="feedback-info__tel" type="tel" name="tel" id="tel-id" required placeholder="Введите телефон">
+                            <input class="feedback-info__text-field feedback-info__text-field--tel-icon" type="tel" name="tel" id="tel-id" required placeholder="Введите телефон">
                         </label>
         <br>
 
         <label class="feedback-info__label" for="mail-id">Электронная почта*
-                            <input class="feedback-info__mail" type="email" name="mail" id="mail-id" placeholder="Введите e-mail" required>
+                            <input class="feedback-info__text-field feedback-info__text-field--email-icon" type="email" name="mail" id="mail-id" placeholder="Введите e-mail" required>
                         </label>
         <br>
 
@@ -133,33 +133,27 @@
   <footer class="page-footer">
     <b class="page-footer__title">#visitsedona</b>
     <div class="page-footer__social">
-      <ul class="page-footer__social__list">
-        <!-- Не бойся заводить лишние блоки. Чаще всего, правило такое: элемент (не в терминах БЭМ, а в обычном смысле слова) повторяется -- его нужно делать блоком. Есть исключения, но в основном принцип такой. -->
-        <!-- Блоки ниже я бы сделал так:-->
+      <ul class="page-footer__social-list">
 
-        <!-- <li class="page-footer__social-item social-item"> -->
-        <!-- <a class="social-item__link social-item__link&#45;&#45;twitter" href="">[twitter icon] -->
-        <!-- </a> -->
-        <!-- </li> -->
         <li class="page-footer__social-item social-item">
           <a class="social-item__link social-item__link--twitter" href="">[twitter icon]
                         </a>
         </li>
-        <li class="page-footer__social__item social-item">
-          <a class="social-item__link--fb" href="">[fb icon]
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--fb" href="">[fb icon]
                         </a>
         </li>
-        <li class="page-footer__social__item social-item">
-          <a class="social-item__link--youtube" href="">[youtube icon]
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--youtube" href="">[youtube icon]
                         </a>
         </li>
       </ul>
-      <!-- Нельзя вкладывать тэг параграфа в список -->
+
     </div>
-    <div class="page-footer__copyright">
+    <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано
                 </b>
-      <a class="copyright__link copyright" href="https://htmlacademy.ru/">[thml academy icon]
+      <a class="copyright__link" href="https://htmlacademy.ru/">[thml academy icon]
                 </a>
     </div>
   </footer>
