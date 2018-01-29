@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,79 +47,81 @@
       </p>
       <ul class="advantages-list">
         <li class="advantages-list__item
-                advantages-list__item--emphasized single-advantage">
-          <h2 class="advantages-list__item-title">Настоящий городок
+                 single-advantage single-advantage--emphasized">
+          <h2 class="single-advantage__title">Настоящий городок
                   </h2>
-          <div class="advantages-list__andvantage-number"> - №1 -
+          <div class="single-advantage__number"> - №1 -
           </div>
-          <p class="advantages-lits__item-message">
+          <p class="single-advantage__message">
              Седона не аттракцион для туристов, там течет своя жизнь
           </p>
-          <img class="advantages-list__truetow-pic" src="http://placehold.it/520x260">
-          <ul class="advantages-list__truetown-list truetown-list">
-            <li class="advantages-list__truetown-item advantages__truetown-item--home">
-              <h3 class="advantages-list__truetown-feature">Жилье</h3>
-              <p class="advantages-list__truetown-message">Рекомендуем пожить в настоящем мотеле,все как в кино!
+          <img class="single-advantage__truetown-pic" src="http://placehold.it/520x260">
+          <ul class="single-advantage__truetown-list truetown-list">
+            <li class="truetown-list__item truetown-list__item--home">
+              <h3 class="single-advantage__title">Жилье</h3>
+              <p class="single-advantage__message">Рекомендуем пожить в настоящем мотеле,все как в кино!
               </p>
             </li>
-            <li class="advantages-list__truetown-item advantages__truetown-item--souvenirs">
-              <h3 class="advantage-list__truetown-feature">Сувениры</h3>
-              <p class="advantages-list__truetown-message">Не только китайского, но и местного производства!
+            <li class="truetown-list__item truetown-list__item--souvenirs">
+              <h3 class="single-advantage__title">Сувениры</h3>
+              <p class="single-advantage__message">Не только китайского, но и местного производства!
               </p>
             </li>
-            <li class="advantages-list__truetown-item advantages__truetown-item--food">
-              <h3 class="advantages-list__truetown-feature">Еда</h3>
-              <p class="advantages-list__truetown-message">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            <li class="truetown-list__item truetown-list__item--food">
+              <h3 class="single-advantage__title">Еда</h3>
+              <p class="single-advantage__message">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
           </ul>
         </li>
-        <li class="advantages-list__item advantages-list__item--emphasized single-advantage">
-          <h2 class="advantages-list__item-title">Там есть мост дьявола
+        <li class="advantages-list__item single-advantage single-advantage__item--emphasized">
+          <h2 class="single-advantage__title">Там есть мост дьявола
               </h2>
-          <div class="advantages-list__andvantage-number"> - №2 -
+          <div class="single-advantage__number"> - №2 -
           </div>
-          <p class="advantages-list__item-message">
+          <p class="single-advantage__message">
              Да, по нему можно пройти, если вы осмелитесь, конечно
           </p>
-          <img class="advantages-list__davil-bridge" src="http://placehold.it/520x260">
+          <img class="single-advantage__davil-bridge-pic" src="http://placehold.it/520x260">
         </li>
         <li class="advantages-list__item single-advantage">
-          <h2 class="advantages-list__item-title">Небольшая площадь
+          <h2 class="single-advantage__title">Небольшая площадь
           </h2>
-          <div class="advantages-list__andvantage-number"> - №3 -
+          <div class="single-advantage__number"> - №3 -
           </div>
-          <p class="advantages-list__item-message">
+          <p class="single-advantage__message">
             Все интересные места находятся очень близко
           </p>
         </li>
         <li class="advantages-list__item single-advantage">
-          <h2 class="advantages-list__item-title">Красивая дорога
+          <h2 class="single-advantage__title">Красивая дорога
           </h2>
-          <div class="advantages-list__andvantage-number"> - №4 -
+          <div class="single-advantage__number"> - №4 -
           </div>
-          <p class="advantages-list__item-message">
+          <p class="single-advantage__message">
              Ехать в седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
         <li class="advantages-list__item single-advantage">
-          <h2 class="advantages-list__item-title">Мало туристов
+          <h2 class="single-advantage__title">Мало туристов
           </h2>
-          <div class="advantages-list__andvantage-number"> - №5 -
+          <div class="single-advantage__number"> - №5 -
           </div>
-          <p class="advantages-list__item-message">
+          <p class="single-advantage__message">
             Большинство едет в Гранд-Каньон и толпится там
           </p>
         </li>
       </ul>
+
+      <div class="advantages__user-question">
+        <p class="advantages__statement">
+          <span class="advantages__title">Заинтересовались?</span>
+          <br> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <button class="advantages__find-button">Найти гостиницу</button>
+      </div>
     </section>
-    <section class="page-main__user-interested">
-      <p class="user-interested__description">
-        <span class="user-interested__title">Заинтересовались?</span>
-        <br> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-      </p>
-      <button class="user-interested__find-place">Найти гостиницу</button>
-    </section>
+
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1664000.4452313462!2d-112.3087515535074!3d35.4547729021094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1516924156554"
       width="320" height="350" frameborder="0" style="border:0"></iframe>
 
