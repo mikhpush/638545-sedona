@@ -1,0 +1,62 @@
+
+
+@blue: rgb(129,179,210);
+@blue-hover: rgb(102,158,192);
+@blue-activen: rgb(84,150,189);
+@blue-down: rgb(84,150,189);
+@blue-text-down: rgb(136,182,209);
+  )
+@font-face {
+  font-family: ptsans;
+  src: url(fonts/ptsans.woff), url(fonts/ptsans.woff2);
+  font-style: normal;
+}
+@font-face {
+  font-family: ptsans;
+  src: url(fonts/ptsansbold.woff), url(fonts/ptsansbold.woff2);
+  font-weight: bold;
+}
+
+body {
+  font-family: "ptsans", "Arial", sans-serif;
+
+}
+// Стилизация блока .header
+.main-menu__item {
+  background-color: @blue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.main-menu__item:link {
+  color: white;
+  text-decoration: none;
+}
+.main-menu__item:visited {
+  color: @blue-text-down;
+  text-decoration: none;
+  background-color: @blue-down;
+
+}
+.main-menu__item:hover {
+  background-color: @blue-hover;
+}
+.main-menu__item:active {
+  background-color: @blue-active;
+}
+
+// Стилизация блока .advantages
+.single-advantage--emphasized {
+  background-color: @blue;
+}
+
+.truetown-list {
+  background-color: white;
+}
+.page-footer__social-item {
+  background-color: @blue;
+}
