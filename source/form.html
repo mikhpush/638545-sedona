@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo-link">
+                <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="sedona" >
+            </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle-open">Открыть</button>
+      <button class="main-nav__toggle-close">Закрыть</button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list main-menu">
+          <li class="main-menu__item main-menu__item--active">
+            <a href="">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="main-menu__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="">HTML academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="welcome-block">
+      <img class="welcome-block__welcome-background welcome-block__welcome-background--position-top" src="http://placehold.it/320x390" alt="sedona-welcome">
+    </section>
+    <section class="feedback-greetings">
+      <b class="page-main__title"> Оставьте свой отзыв
+                </b>
+      <p class="page-main__text-area">Помогите нашим отеля стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+    </section>
+    <section class="feedback-info">
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <b class="page-main__title">Представьтесь:
+                    </b>
+        <br>
+        <input class="feedback-info__text-field page-main__text-area" type="text" name="name" required id="name-id">
+        <label class="feedback-info__label" for="name-id">Имя*:</label>
+        <br>
+
+        <input class="feedback-info__text-field page-main__text-area" type="text" name="surname" required id="surname-id">
+        <label class="feedback-info__label" for="surname-id">Фамилия*:</label>
+        <br>
+
+        <input class="feedback-info__text-field page-main__text-area" type="text" name="patronomic" id="patronomic-id">
+        <label class="feedback-info__label" for="patronomic-id">Отчество*:</label>
+        <br>
+        <b class="page-main__title">Контактная информация:
+                    </b>
+        <br>
+        <label class="feedback-info__label page-main__text-area" for="tel-id">Контактный телефон*
+                            <input class="feedback-info__text-field feedback-info__text-field--tel-icon" type="tel" name="tel" id="tel-id" required placeholder="Введите телефон">
+                        </label>
+        <br>
+
+        <label class="feedback-info__label page-main__text-area" for="mail-id">Электронная почта*
+                            <input class="feedback-info__text-field feedback-info__text-field--email-icon" type="email" name="mail" id="mail-id" placeholder="Введите e-mail" required>
+                        </label>
+        <br>
+
+        <b class="page-main__title">Ваше общее впечатление:
+                    </b>
+        <br>
+        <label class="feedback-info__radio-button-label page-main__option-label" for="positive-id">Скорее положительное
+                            <input class="feedback-info__radio-button" type="radio" name="experience" id="positive-id" value="positive" checked>
+                        </label>
+        <br>
+
+        <label class="feedback-info__radio-button-label page-main__option-label" for="negative-id">Скорее отрицительное
+                            <input class="feedback-info__radio-button" type="radio" name="experience" id="negative-id" value="negative">
+                        </label>
+        <br>
+
+        <label class="feedback-info__radio-button-label page-main__option-label" for="neutral-id">Затрудняюсь ответить
+                            <input class="feedback-info__radio-button" type="radio" name="experience" id="neutral-id" value="neutral">
+                        </label>
+        <br>
+
+        <b class="feedback-info__visited-list page-main__title">Посещенные достопримечательности:
+                    </b>
+        <br>
+        <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="davil-id" value="davil-bridge">
+        <label class="feedback-info__checkbox-label page-main__option-label" for="davil-id">Мост Дьявола
+                            </label>
+        <br>
+
+        <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="park-id" value="slaid-park">
+        <label class="feedback-info__checkbox-label page-main__option-label" for="park-id">Слайд-парк
+                            </label>
+        <br>
+        <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="mountain-id" value="mountain-bell">
+        <label class="feedback-info__checkbox-label page-main__option-label" for="mountain-id">Гора-Колокол
+                            </label>
+        <br>
+
+        <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="rocks-id" value="red-rocks">
+        <label class="feedback-info__checkbox-label page-main__option-label" for="rocks-id">Красные скалы
+                            </label>
+        <br>
+
+        <b class="feedback-info__emotions-title page-main__title">Опишите свои эмоции:
+                    </b>
+        <br>
+        <textarea class="feedback-info__emotions-text page-main__option-label" name="emotions" rows="6">Опишите подробно все свои восторги</textarea>
+        <br>
+
+        <div class="feedback-info__button">
+          <input class="feedback-info__submit" type="submit" value="Отправить отзыв">
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <b class="page-footer__title">#visitsedona</b>
+    <div class="page-footer__social">
+      <ul class="page-footer__social-list">
+
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--twitter" href="">[twitter icon]
+                        </a>
+        </li>
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--fb" href="">[fb icon]
+                        </a>
+        </li>
+        <li class="page-footer__social-item social-item">
+          <a class="social-item__link social-item__link--youtube" href="">[youtube icon]
+                        </a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано
+                </b>
+      <a class="copyright__link" href="https://htmlacademy.ru/">[thml academy icon]
+                </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
