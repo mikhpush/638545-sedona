@@ -4,84 +4,87 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo-link">
-                <img class="page-header__logo-image" src="http://placehold.it/102x83" alt="sedona" >
-            </a>
+    <div class="page-header__logo-wrap">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="sedona" >
+      </a>
+    </div>
+
     <nav class="main-nav">
       <button class="main-nav__toggle-open">Открыть</button>
       <button class="main-nav__toggle-close">Закрыть</button>
+        <div class="main-nav__list main-menu">
+          <div class="main-menu__item main-menu__item--active">
+            <a class="main-menu__link" href="">Главная</a>
+          </div>
+          <div class="main-menu__item">
+            <a class="main-menu__link" href="photo.html">Фото и видео</a>
+          </div>
+          <div class="main-menu__item">
+            <a class="main-menu__link" href="">Форма отзыва</a>
+          </div>
+          <div class="main-menu__item">
+            <a class="main-menu__link" href="">HTML academy</a>
+          </div>
+        </div>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list main-menu">
-          <li class="main-menu__item main-menu__item--active">
-            <a href="">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="">Фото и видео</a>
-          </li>
-          <li class="main-menu__item">
-            <a>Форма отзыва</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="">HTML academy</a>
-          </li>
-        </ul>
-      </div>
     </nav>
   </header>
 
   <main class="page-main">
-    <section class="welcome-block">
-      <img class="welcome-block__welcome-background welcome-block__welcome-background--position-top" src="http://placehold.it/320x390" alt="sedona-welcome">
+    <section class="welcome-block welcome-block--up">
+      <div class="welcome-block__welcome-background">
+      </div>
     </section>
+
     <section class="page-main__photo-video photo-video">
-      <h1 class="photo-video__title"> Фото и Видео
-			</h1>
-      <p class="photo-video__statement"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-      </p>
+      <div class="photo-video__title-wrap">
+        <h1 class="photo-video__title"> Фото и Видео
+        </h1>
+        <p class="photo-video__message"> Не можете решиться на путешествие<br> из-за курса? Фотографии помогут<br> вам забыть о политике и экономике.
+        </p>
+      </div>
       <article class="photo-video__landscape single-landscape">
-        <img class="single-landscape__image" src="http://placehold.it/280x282" alt="free-land-sedona">
+        <img class="single-landscape__image" src="img/photo-sunset-mobile@1x.jpg" alt="free-land-sedona">
         <br>
         <b class="single-landscape__title">Народные просторы
-				</b>
+        </b>
         <p class="single-landscape__author">Автор фото: Борис
         </p>
         <span class="single-landscape__like">1350</span>
       </article>
 
       <article class="photo-video__landscape single-landscape">
-        <img class="single-landscape__image" src="http://placehold.it/280x282" alt="local-flora-sedona">
+        <img class="single-landscape__image" src="img/photo-cactus-mobile@1x.jpg" alt="local-flora-sedona">
         <br>
-        <b class="single-landscape__title">
-					Местная растительность
-				</b>
+        <b class="single-landscape__title">Местная растительность
+        </b>
         <p class="single-landscape__author">Автор фото: Сергей
         </p>
         <span class="single-landscape__like">143</span>
       </article>
 
       <article class="photo-video__landscape single-landscape">
-        <img class="single-landscape__image" src="http://placehold.it/280x282" alt="road-north-sedona">
+        <img class="single-landscape__image" src="img/photo-roads-mobile@1x.jpg" alt="road-north-sedona">
         <br>
-        <b class="single-landscape__title">
-					Дорога на север
-				</b>
+        <b class="single-landscape__title">Дорога на север
+        </b>
         <p class="single-landscape__author">Автор фото: Петр
         </p>
         <span class="single-landscape__like">96</span>
       </article>
 
       <article class="photo-video__landscape single-landscape">
-        <img class="single-landscape__image" src="http://placehold.it/280x282" alt="davil-bridge-sedona">
+        <img class="single-landscape__image" src="img/photo-bridge-mobile@1x.jpg" alt="davil-bridge-sedona">
         <br>
-        <b class="single-landscape__title">
-					Мост дьявола
-				</b>
+        <b class="single-landscape__title">Мост дьявола
+        </b>
         <p class="single-landscape__author">Автор фото: Антон
         </p>
         <span class="single-landscape__like">254</span>
@@ -90,39 +93,28 @@
 
     <section class="page-main__no-doubt no-doubt">
       <b class="no-doubt__title">Все еще сомневаетесь?
-			</b>
-      <p class="no-doubt__statement">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </b>
+      <p class="no-doubt__message">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <video class="no-doubt__video" controls preload="metadata" width="320" height="290" poster="http://placehold.it/300x270">
-
-			</video>
+      <video class="no-doubt__video" controls preload="metadata" width="310" height="288" poster="http://placehold.it/300x270">
+      </video>
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <b class="page-footer__title">#visitsedona</b>
-    <div class="page-footer__social">
-      <ul class="page-footer__social-list">
-
-        <li class="page-footer__social-item social-item">
-          <a class="social-item__link social-item__link--twitter" href="">[twitter icon]
-                        </a>
-        </li>
-        <li class="page-footer__social-item social-item">
-          <a class="social-item__link social-item__link--fb" href="">[fb icon]
-                        </a>
-        </li>
-        <li class="page-footer__social-item social-item">
-          <a class="social-item__link social-item__link--youtube" href="">[youtube icon]
-                        </a>
-        </li>
-      </ul>
-
-    </div>
+    <div class="page-footer__title">#visitsedona</div>
+    <aside class="page-footer__social social-list">
+          <a class="social-list__link social-list__link--twitter" href="">[twitter icon]
+          </a>
+          <a class="social-list__link social-list__link--fb" href="">[fb icon]
+          </a>
+          <a class="social-list__link social-list__link--youtube" href="">[youtube icon]
+          </a>
+    </aside>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано
-                </b>
+      <span class="copyright__text">Разработано
+      </span>
       <a class="copyright__link" href="https://htmlacademy.ru/">[thml academy icon]
                 </a>
     </div>
