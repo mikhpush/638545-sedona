@@ -1,0 +1,75 @@
+// Стилизация блока .advantages
+
+.advantages {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__item {
+  background-color: @gray-bg;
+  margin: 0;
+  border-bottom: 1px solid gray;
+}
+
+.advantages__item--emphasized {
+  background-color: @blue;
+  color: white;
+}
+
+.advantages__item-title {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.advantages__item-title--padding-more {
+  padding-top: 46px;
+  padding-bottom: 41px;
+}
+
+.advantages__user-question > .advantages__item-title {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.advantages__item-number {
+  color: @gray-text;
+  padding-bottom: 26px;
+  margin: 0;
+}
+
+.advantages__item--emphasized > .advantages__item-number {
+  color: white;
+}
+
+.advantages__item-message {
+  color: @gray-text;
+  font-size: 14px;
+  padding-bottom: 32px;
+  margin: 0;
+}
+
+.advantages__item--emphasized > .advantages__item-message {
+  color: white;
+}
+
+.advantages__user-question {
+  border: 2px dashed gray;
+}
+
+.advantages__find-button {
+  background-color: @blue;
+  font-family: "ptsans", "Arial", serif;
+  font-weight: bold;
+  font-size: 21px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: auto 0 50px auto;
+  width: 280px;
+}
