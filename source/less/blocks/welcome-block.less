@@ -20,3 +20,22 @@
   position: relative;
   height: inherit;
 }
+
+@media (min-width: @tablet) {
+
+  .welcome-block__welcome-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url("../img/bg-back-mobile@1x.jpg");
+
+  }
+
+  .welcome-block__bg-triangle {
+    width: 768px;
+    height: 100px;
+    background-color: blue;
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+    z-index: 2;
+  }
+}

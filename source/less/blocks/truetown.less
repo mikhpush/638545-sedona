@@ -13,6 +13,35 @@
 
 .truetown__item-message {
   color: @gray-text;
-  text-align: left;
+
   font-size: 14px;
+}
+
+@media (min-width: @tablet) {
+  .truetown {
+    display: flex;
+    padding-left: 0;
+  }
+
+  .truetown__item {
+    display: flex;
+    width: 252px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed @blue;
+
+  }
+
+  .truetown__item-message {
+    text-align: center;
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: @desktop) {
+  .truetown__item {
+    width: 396px;
+
+  }
 }
