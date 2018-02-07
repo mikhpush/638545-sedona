@@ -1,43 +1,26 @@
-
-// Стилизация блока .header
-
-.page-header {
-  display: flex;
-  flex-direction: column;
-}
-
-.page-header__logo-wrap {
-  order:2;
-  align-self: center;
-}
-
-.main-menu__logo-wrap {
-  display: none;
-}
-
-.page-header__logo-link {
-  text-align: center;
-}
-
 .main-menu {
-  border: 2px dashed gray;
   display: block;
+  position: relative;
 }
 
 .main-menu__item {
+  display: table;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 1px solid lightgray;
   border-bottom: 1px solid gray;
+  font-size: 18px;
+  width: 100%;
+
 }
 
 .main-menu__link {
   text-decoration: none;
-  display: block;
+  height: 54px;
+  display: table-cell;
   vertical-align: middle;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   &:link {
     color: white;
@@ -60,17 +43,14 @@
   }
 }
 
+.main-menu__logo-wrap {
+  display: none;
+}
+
 @media (min-width: @tablet) {
-    .page-header__nav-buttons {
-    display: none;
-  }
 
   .main-menu__logo-wrap {
     display: flex;
-  }
-
-    .page-header__logo-wrap {
-    display: none;
   }
 
   .main-menu {

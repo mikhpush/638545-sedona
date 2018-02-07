@@ -51,98 +51,113 @@
         </p>
       </div>
 
-      <div class="feedback-info__fields-wrap">
-        <form action="https://echo.htmlacademy.ru" method="post">
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-info__fields-wrap">
+
           <div class="feedback-info__cridetials-wrap">
             <h3 class="feedback-info__title">Представьтесь:
             </h3>
-            <br>
-            <label class="feedback-info__label" for="name-id">Имя*:</label>
-            <input class="feedback-info__text-field" type="text" name="name" required id="name-id">
-                        <br>
-            <label class="feedback-info__label" for="surname-id">Фамилия*:</label>
-            <input class="feedback-info__text-field" type="text" name="surname" required size="15" id="surname-id">
-                        <br>
-            <label class="feedback-info__label" for="patronomic-id">Отчество*:</label>
-            <input class="feedback-info__text-field" type="text" name="patronomic" size="15" id="patronomic-id">
-                        <br>
+            <div class="feedback-info__cridetials-field-wrap">
+              <label class="feedback-info__label" for="name-id">Имя*:</label>
+              <input class="feedback-info__text-field" type="text" name="name" required id="name-id">
+            </div>
+            <div class="feedback-info__cridetials-field-wrap">
+              <label class="feedback-info__label" for="surname-id">Фамилия*:</label>
+              <input class="feedback-info__text-field" type="text" name="surname" required size="15" id="surname-id">
+            </div>
+            <div class="feedback-info__cridetials-field-wrap">
+              <label class="feedback-info__label" for="patronomic-id">Отчество*:</label>
+              <input class="feedback-info__text-field" type="text" name="patronomic" size="15" id="patronomic-id">
+            </div>
           </div>
 
           <div class="feedback-info__contacts-wrap">
-            <h3 class="feedback-info__title">Контактная информация:
+            <h3 class="feedbackf-info__title">Контактная информация:
             </h3>
-            <br>
-            <label class="feedback-info__label" for="tel-id">Контактный телефон*
-                                <input class="feedback-info__text-field feedback-info__text-field--tel-icon" type="tel" name="tel" id="tel-id" required placeholder="Введите телефон">
-                            </label>
-            <br>
-
-            <label class="feedback-info__label" for="mail-id">Электронная почта*
-                                <input class="feedback-info__text-field feedback-info__text-field--email-icon" type="email" name="mail" id="mail-id" placeholder="Введите e-mail" required>
-                            </label>
-            <br>
+            <div class="feedback-info__contact-fields-wrap">
+              <div class="feedback-info__tel-mail-wrap">
+                <label class="feedback-info__label" for="tel-id">Контактный телефон*
+                </label>
+                <input class="feedback-info__text-field feedback-info__text-field--tel-icon" type="tel" name="tel" id="tel-id" required placeholder="Введите телефон">
+              </div>
+              <div class="feedback-info__tel-mail-wrap">
+                <label class="feedback-info__label" for="mail-id">Электронная почта*
+                </label>
+                <input class="feedback-info__text-field feedback-info__text-field--email-icon" type="email" name="mail" id="mail-id" placeholder="Введите e-mail" required>
+              </div>
+            </div>
           </div>
 
           <div class="feedback-info__experience-wrap">
-
             <h3 class="feedback-info__title">Ваше общее впечатление:
             </h3>
-            <br>
+            <div class="feedback-info__radio-wrap">
+              <input class="feedback-info__radio-button" type="radio" name="experience" id="positive-id" value="positive" checked>
+              <label class="feedback-info__option-label" for="positive-id">Скорее положительное
+              </label>
+            </div>
+            <div class="feedback-info__radio-wrap">
+              <input class="feedback-info__radio-button" type="radio" name="experience" id="negative-id" value="negative">
+              <label class="feedback-info__option-label" for="negative-id">Скорее отрицительное
+              </label>
+            </div>
 
-            <input class="feedback-info__radio-button" type="radio" name="experience" id="positive-id" value="positive" checked>
-            <label class="feedback-info__option-label" for="positive-id">Скорее положительное
-            </label>
-            <br>
-            <input class="feedback-info__radio-button" type="radio" name="experience" id="negative-id" value="negative">
-            <label class="feedback-info__option-label" for="negative-id">Скорее отрицительное
-            </label>
-            <br>
-
-            <input class="feedback-info__radio-button" type="radio" name="experience" id="neutral-id" value="neutral">
-            <label class="feedback-info__option-label" for="neutral-id">Затрудняюсь ответить
-            </label>
-            <br>
+            <div class="feedback-info__radio-wrap">
+              <input class="feedback-info__radio-button" type="radio" name="experience" id="neutral-id" value="neutral">
+              <label class="feedback-info__option-label" for="neutral-id">Затрудняюсь ответить
+              </label>
+            </div>
           </div>
 
           <div class="feedback-info__sightseeing-wrap">
 
             <h3 class="feedback-info__title">Посещенные достопримечательности:
             </h3>
-            <br>
-            <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="davil-id" value="davil-bridge">
-            <label class="feedback-info__option-label" for="davil-id">Мост Дьявола
-                                </label>
-            <br>
-
-            <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="park-id" value="slaid-park">
-            <label class="feedback-info__option-label" for="park-id">Слайд-парк
-                                </label>
-            <br>
-            <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="mountain-id" value="mountain-bell">
-            <label class="feedback-info__option-label" for="mountain-id">Гора-Колокол
-                                </label>
-            <br>
-
-            <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="rocks-id" value="red-rocks">
-            <label class="feedback-info__option-label" for="rocks-id">Красные скалы
-                                </label>
-            <br>
+            <div class="feedback-info__sightseeing-list-wrap">
+              <div class="feedback-info__sightseeing-field-wrap">
+                <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="davil-id" value="davil-bridge">
+                <label class="feedback-info__option-label" for="davil-id">Мост Дьявола
+                </label>
+              </div>
+              <div class="feedback-info__sightseeing-field-wrap">
+                <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="park-id" value="slaid-park">
+                <label class="feedback-info__option-label" for="park-id">Слайд-парк
+                </label>
+              </div>
+              <div class="feedback-info__sightseeing-field-wrap">
+                <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="mountain-id" value="mountain-bell">
+                <label class="feedback-info__option-label" for="mountain-id">Гора-Колокол
+                </label>
+              </div>
+              <div class="feedback-info__sightseeing-field-wrap">
+                <input class="feedback-info__checkbox" type="checkbox" name="visited-places" id="rocks-id" value="red-rocks">
+                <label class="feedback-info__option-label" for="rocks-id">Красные скалы
+                </label>
+              </div>
+            </div>
           </div>
 
           <div class="feedback-info__emotions-wrap">
             <h3 class="feedback-info__title">Опишите свои эмоции:
             </h3>
             <br>
-            <textarea class="feedback-info__text-area feedback-info__text-field" name="emotions" rows="12">Опишите подробно все свои восторги</textarea>
+            <textarea class="feedback-info__text-area" name="emotions" rows="12">Опишите подробно все свои восторги</textarea>
             <br>
 
-            <div class="feedback-info__button">
-              <input class="feedback-info__submit" type="submit" value="Отправить отзыв">
+            <div class="feedback-info__submit-wrap">
+              <div class="feedback-info__button">
+                <input class="feedback-info__submit" type="submit" value="Отправить отзыв">
+              </div>
+              <div class="feedback-info__required-mark">
+                <span class="feedback-info__required-text feedback-info__label">* — обязательные поля </span>
+              </div>
             </div>
           </div>
 
-        </form>
-      </div>
+        </div>
+      </form>
+
     </section>
 
   </main>

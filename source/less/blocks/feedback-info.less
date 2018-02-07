@@ -93,6 +93,7 @@
   margin: 0;
   border-bottom: 1px solid lightgray;
   padding-bottom: 20px;
+
 }
 
 .feedback-info__text-area {
@@ -101,7 +102,6 @@
   font-weight: bold;
   font-size: 16px;
   padding: 10px 10px 10px 20px;
-  width: 240px;
   height: 150px;
   border: none;
   margin-bottom: 10px;
@@ -120,4 +120,163 @@
   cursor: pointer;
   margin: auto 0 0 auto;
   width: 280px;
+}
+
+@media (min-width:@tablet) {
+
+  .feedback-info__fields-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback-info__cridetials-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 270px;
+
+  }
+  .feedback-info__cridetials-field-wrap {
+    display: flex;
+  }
+
+  .feedback-info__label {
+    margin-right: 10px;
+  }
+
+  .feedback-info__contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 648px;
+  }
+
+  .feedback-info__contact-fields-wrap {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+  .feedback-info__tel-mail-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedbackf-info__title {
+    margin: 0;
+  }
+
+  .feedback-info__text-field {
+    margin: 0;
+  }
+  .feedback-info__label {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .feedback-info__experience-wrap {
+    display: flex;
+    flex-direction: column;
+    order:-1;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .feedback-info__radio-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .feedback-info__sightseeing-wrap {
+    margin: auto;
+  }
+
+  .feedback-info__sightseeing-list-wrap {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 100px;
+  }
+
+  .feedback-info__sightseeing-field-wrap {
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  .feedback-info__emotions-wrap {
+    width: 648px;
+    background-color: pink;
+  }
+
+  .feedback-info__text-area {
+    width: 100%;
+  }
+
+  .feedback-info__submit-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media (min-width:@desktop) {
+
+  .feedback-info__fields-wrap {
+    width: 960px;
+  }
+
+  .feedback-info__cridetials-field-wrap {
+    width: 420px;
+  }
+  .feedback-info__cridetials-wrap .feedback-info__title {
+    margin-right: auto;
+  }
+
+  .feedback-info__text-field {
+    flex-grow: 1;
+  }
+
+  .feedback-info__experience-wrap .feedback-info__title {
+    margin-left: 30px;
+  }
+
+  .feedback-info__contacts-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 960px;
+  }
+
+  .feedback-info__contact-fields-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feedback-info__tel-mail-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .feedback-info__sightseeing-list-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 960px;
+  }
+
+  .feedback-info__sightseeing-field-wrap {
+    margin: 30px 0px 30px 0px;
+  }
+
+  .feedback-info__emotions-wrap {
+    width: 960px;
+    background-color: white;
+  }
 }
