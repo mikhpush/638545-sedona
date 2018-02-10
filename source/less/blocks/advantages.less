@@ -18,7 +18,7 @@
 }
 
 .advantages__item-title {
-  font-family: "ptsans";
+  font-family: "ptsans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   padding-top: 27px;
@@ -26,6 +26,7 @@
   margin: 0;
   line-height: 26px;
 }
+
 .advantages__item-title-truetown {
   padding-top: 56px;
 }
@@ -42,10 +43,6 @@
 .advantages__user-question .advantages__item-title {
   font-weight: bold;
   font-size: 21px;
-}
-
-.advantages__wrapper {
-
 }
 
 .advantages__item-number {
@@ -85,10 +82,6 @@
   height: 260px;
 }
 
-.advantages__user-question {
-
-}
-
 .advantages__find-button {
   background-color: inherit;
   font-family: "ptsans", "Arial", serif;
@@ -102,11 +95,9 @@
   cursor: pointer;
   margin: auto 0 50px auto;
   width: 280px;
-  background-color: @blue;
 }
 
 @media (min-width: @tablet) {
-
   .mobile-br {
     display: none;
   }
@@ -146,7 +137,7 @@
 
   .advantages .advantages__item-message-designer-is-awesome {
     padding-bottom: 52px;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .advantages__item-picture {
@@ -159,14 +150,13 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-
   }
 
-.advantages__user-question .advantages__item-title--enlarged {
-  font-size: 30px;
-  padding-top: 56px;
-  padding-bottom: 24px;
-}
+  .advantages__user-question .advantages__item-title--enlarged {
+    font-size: 30px;
+    padding-top: 56px;
+    padding-bottom: 24px;
+  }
 
   .advantages__find-button {
     width: 458px;
@@ -175,9 +165,6 @@
 }
 
 @media (min-width: @desktop) {
-
-
-
   .advantages__item--emphasized .advantages__item-title {
     padding-top: 52px;
     font-size: 21px;
@@ -189,7 +176,6 @@
   .advantages__item--emphasized .advantages__item-message {
     padding-bottom: 38px;
     padding-top: 10px;
-
   }
 
   .advantages__item-title {
@@ -198,7 +184,6 @@
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 6px;
-
   }
 
   .advantages__item-message {
@@ -206,7 +191,6 @@
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
-
   }
 
   .mobile-br,
