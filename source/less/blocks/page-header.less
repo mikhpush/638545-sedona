@@ -1,26 +1,19 @@
 
 // Стилизация блока .header
 
-.page-header {
-  display: flex;
-  flex-direction: column;
+.page-header__nav {
+  position: relative;
 }
 
-.page-header__logo-wrap {
-  order:2;
-  align-self: center;
-}
-
-.page-header__logo-link {
-  text-align: center;
-}
 
 .page-header__toggle-open {
   display: block;
   position: absolute;
-  bottom: -30px;
-  right: 0;
+  bottom: 5px;
+  right: 15px;
   z-index: 2;
+  background-color: transparent;
+  border: none;
 }
 
 .page-header__toggle-close {
@@ -36,7 +29,9 @@
 @media (min-width: @tablet) {
 
 
-    .page-header__logo-wrap {
+    .page-header__toggle {
     display: none;
   }
+
+
 }
