@@ -8,38 +8,38 @@
 </head>
 
 <body>
-
+<div class="body-wrapper">
   <header class="page-header">
-    <div class="page-header__logo-wrap">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="sedona" >
-      </a>
-    </div>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle-open">Открыть</button>
-      <button class="main-nav__toggle-close">Закрыть</button>
-        <div class="main-nav__list main-menu">
-          <div class="main-menu__item main-menu__item--active">
-            <a class="main-menu__link" href="">Главная</a>
-          </div>
-          <div class="main-menu__item">
-            <a class="main-menu__link" href="photo.html">Фото и видео</a>
-          </div>
-          <div class="main-menu__item">
-            <a class="main-menu__link" href="">Форма отзыва</a>
-          </div>
-          <div class="main-menu__item">
-            <a class="main-menu__link" href="">HTML academy</a>
-          </div>
-        </div>
+    <nav class="page-header__nav main-menu">
+      <button class="page-header__toggle-open page-header__toggle"><img src="img/icon-menu.svg" width="23" height="40" ></button>
+      <button class="page-header__toggle-close page-header__toggle"><img src="img/icon-cross.svg" width="23" height="23"></button>
 
+      <div class="main-menu__item main-menu__item--active">
+        <a class="main-menu__link" href="">Главная</a>
+      </div>
+      <div class="main-menu__item">
+        <a class="main-menu__link" href="photo.html">Фото и видео</a>
+      </div>
+      <div class="main-menu__logo-wrap main-menu__item">
+        <a class="main-menu__logo-link">
+          <img class="main-menu__logo-image" src="img/logo-sedona-mobile.svg" alt="sedona" >
+        </a>
+      </div>
+      <div class="main-menu__item">
+        <a class="main-menu__link" href="form.html">Форма отзыва</a>
+      </div>
+      <div class="main-menu__item">
+        <a class="main-menu__link" href="">HTML academy</a>
+      </div>
     </nav>
   </header>
 
   <main class="page-main">
     <section class="welcome-block welcome-block--up">
       <div class="welcome-block__welcome-background">
+        <div class="welcome-block__bg-triangle">
+        </div>
       </div>
     </section>
 
@@ -47,60 +47,68 @@
       <div class="photo-video__title-wrap">
         <h1 class="photo-video__title"> Фото и Видео
         </h1>
-        <p class="photo-video__message"> Не можете решиться на путешествие<br> из-за курса? Фотографии помогут<br> вам забыть о политике и экономике.
+        <p class="photo-video__message"> Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
       </div>
       <article class="photo-video__landscape single-landscape">
         <img class="single-landscape__image" src="img/photo-sunset-mobile@1x.jpg" alt="free-land-sedona">
-        <div class="single-landscape__cridentials-wrap">
-          <b class="single-landscape__title">Народные просторы
-          </b>
-          <p class="single-landscape__author">Автор фото: Борис
-          </p>
+        <div class="single-landscape__desktop-wrap">
+          <div class="single-landscape__cridentials-wrap">
+            <h3 class="single-landscape__title">Неродные просторы
+            </h3>
+            <p class="single-landscape__author">Автор фото: Борис
+            </p>
+          </div>
+          <span class="single-landscape__like">1350</span>
         </div>
-        <span class="single-landscape__like">1350</span>
       </article>
 
       <article class="photo-video__landscape single-landscape">
         <img class="single-landscape__image" src="img/photo-cactus-mobile@1x.jpg" alt="local-flora-sedona">
-        <div class="single-landscape__cridentials-wrap">
-          <b class="single-landscape__title">Местная растительность
-          </b>
-          <p class="single-landscape__author">Автор фото: Сергей
-          </p>
+        <div class="single-landscape__desktop-wrap">
+          <div class="single-landscape__cridentials-wrap">
+            <h3 class="single-landscape__title">Местная растительность
+            </h3>
+            <p class="single-landscape__author">Автор фото: Сергей
+            </p>
+          </div>
+          <span class="single-landscape__like">143</span>
         </div>
-        <span class="single-landscape__like">143</span>
       </article>
 
       <article class="photo-video__landscape single-landscape">
         <img class="single-landscape__image" src="img/photo-roads-mobile@1x.jpg" alt="road-north-sedona">
-        <div class="single-landscape__cridentials-wrap">
-          <b class="single-landscape__title">Дорога на север
-          </b>
-          <p class="single-landscape__author">Автор фото: Петр
-          </p>
+        <div class="single-landscape__desktop-wrap">
+          <div class="single-landscape__cridentials-wrap">
+            <h3 class="single-landscape__title">Дорога на север
+            </h3>
+            <p class="single-landscape__author">Автор фото: Петр
+            </p>
+          </div>
+          <span class="single-landscape__like">96</span>
         </div>
-        <span class="single-landscape__like">96</span>
       </article>
 
       <article class="photo-video__landscape single-landscape">
         <img class="single-landscape__image" src="img/photo-bridge-mobile@1x.jpg" alt="davil-bridge-sedona">
-        <div class="single-landscape__cridentials-wrap">
-          <b class="single-landscape__title">Мост дьявола
-          </b>
-          <p class="single-landscape__author">Автор фото: Антон
-          </p>
+        <div class="single-landscape__desktop-wrap">
+          <div class="single-landscape__cridentials-wrap">
+            <h3 class="single-landscape__title">Мост дьявола
+            </h3>
+            <p class="single-landscape__author">Автор фото: Антон
+            </p>
+          </div>
+          <span class="single-landscape__like">254</span>
         </div>
-        <span class="single-landscape__like">254</span>
       </article>
     </section>
 
     <section class="page-main__no-doubt no-doubt">
-      <b class="no-doubt__title">Все еще сомневаетесь?
-      </b>
+      <h3 class="no-doubt__title">Все еще сомневаетесь?
+      </h3>
       <p class="no-doubt__message">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <video class="no-doubt__video" controls preload="metadata" width="100%" height="auto" poster="http://placehold.it/300x270">
+      <video class="no-doubt__video" controls preload="metadata" width="100%" poster="http://placehold.it/300x270">
       </video>
     </section>
 
@@ -124,7 +132,7 @@
     </div>
   </footer>
 
-
+</div>
 </body>
 
 </html>
