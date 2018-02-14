@@ -1,0 +1,56 @@
+.experience {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 22px;
+}
+
+.experience__title {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: left;
+  padding-left: 42px;
+}
+
+.experience__radio-wrap {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  padding-left: 65px;
+  padding-right: 0;
+  font-size: 18px;
+}
+
+@media (min-width: @tablet) {
+  .experience {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    width: 323px;
+    border-right: 1px solid lightgray;
+  }
+
+  .experience__title {
+    align-self: flex-start;
+    padding-left: 0;
+    padding-bottom: 39px;
+    margin: 0;
+  }
+
+  .experience__radio-wrap {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .experience {
+    width: 480px;
+  }
+
+  .experience__title {
+    padding-left: 80px;
+  }
+
+  .experience__radio-wrap {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
