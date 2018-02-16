@@ -39,14 +39,11 @@
     padding-left: 185px;
     text-align: left;
     padding-bottom: 2px;
+    // overflow: hidden;
   }
 
   .contacts__label {
     padding-top: 26px;
-  }
-
-  .contacts__label--desktop {
-    display: none;
   }
 }
 
@@ -62,7 +59,7 @@
     padding-bottom: 74px;
   }
 
-  .contacts-wrap {
+  .contacts__wrap {
     display: flex;
     justify-content: space-between;
   }
@@ -86,5 +83,9 @@
 
   .contacts__label--nondesktop {
     display: none;
+  }
+
+  .contacts__label--desktop {
+    display: inline-block;
   }
 }

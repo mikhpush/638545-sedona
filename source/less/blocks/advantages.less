@@ -15,29 +15,44 @@
   background-color: @blue;
   color: white;
   padding-bottom: 12px;
+  border: none;
 }
 
 .advantages__item-title {
-  font-family: "ptsans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   padding-top: 27px;
   padding-bottom: 10px;
-  margin: 0;
+  margin: auto;
   line-height: 26px;
+  width: 260px;
+}
+
+.advantages__item-title--padding-more {
+  padding-top: 40px;
+  padding-bottom: 28px;
 }
 
 .advantages__item-title-truetown {
   padding-top: 56px;
 }
 
+.advantages__item-picture--truetown {
+  width: 320px;
+  height: 260px;
+}
+
 .advantages__item-title-bridge {
   padding-top: 40px;
 }
 
-.advantages__item-title--padding-more {
-  padding-top: 40px;
-  padding-bottom: 26px;
+.advantages__item-picture--bridge {
+  width: 320px;
+  height: 260px;
+}
+
+.advantages__reverse-wrapper {
+  height: 453px;
 }
 
 .advantages__user-question .advantages__item-title {
@@ -47,44 +62,59 @@
 
 .advantages__item-number {
   color: @gray-text;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
   margin: 0;
+  font-size: 14px;
 }
 
 .advantages__item--emphasized .advantages__item-number {
   color: white;
 }
 
+.advantages__item-message--first {
+  width: 280px;
+}
+
 .advantages__item-message {
   color: @gray-text;
   font-size: 14px;
   padding-bottom: 27px;
-  margin: 0;
+  margin: auto;
   line-height: 22px;
 }
 
-.advantages__item-message-question {
-  padding-top: 11px;
-  padding-bottom: 38px;
+.advantages__item-message--third {
+  width: 280px;
 }
 
-.advantages__item-message-designer-is-awesome {
-  line-height: 26px;
+.advantages__item-message--forth {
+  width: 240px;
+}
+
+.advantages__item-message--fifth {
+  width: 260px;
+}
+
+.advantages__item-message--padding-more {
   padding-bottom: 26px;
+  line-height: 26px;
+  width: 260px;
+}
+
+.advantages__item-message-question {
+  padding-top: 8px;
+  padding-bottom: 35px;
+  line-height: 24px;
+  width: 280px;
 }
 
 .advantages__item--emphasized > .advantages__item-message {
   color: white;
 }
 
-.advantages__item-picture--truetown {
-  width: 320px;
-  height: 260px;
-}
-
 .advantages__find-button {
-  background-color: inherit;
-  font-family: "ptsans", "Arial", serif;
+  background-color: @blue;
+  font-family: inherit;
   font-weight: bold;
   font-size: 21px;
   padding-top: 16px;
@@ -98,19 +128,27 @@
 }
 
 @media (min-width: @tablet) {
-  .mobile-br {
-    display: none;
+  .advantages .advantages__item-title--padding-more {
+    padding-top: 50px;
+    width: 600px;
+    padding-bottom: 22px;
+  }
+
+  .advantages .advantages__item-message--padding-more {
+    padding-bottom: 49px;
+    line-height: 26px;
+    width: 600px;
   }
 
   .advantages__wrapper {
     display: flex;
     flex-wrap: wrap;
-    background-color: pink;
   }
 
   .advantages__item {
     width: 33%;
     flex-grow: 1;
+    border: none;
   }
 
   .advantages__item--emphasized {
@@ -122,22 +160,33 @@
   .advantages__item-title {
     padding-top: 46px;
     font-size: 21px;
+    width: 151px;
   }
 
   .advantages__item-message {
     padding-bottom: 42px;
     padding-top: 8px;
+    line-height: 21px;
   }
 
-  .advantages .advantages__item-title--padding-more {
-    padding-top: 50px;
-    padding-bottom: 26px;
-    font-size: 21px;
+  .advantages__item-message--first {
+    width: 170px;
   }
 
-  .advantages .advantages__item-message-designer-is-awesome {
-    padding-bottom: 52px;
-    padding-top: 0;
+  .advantages__item-message--second {
+    width: 170px;
+  }
+
+  .advantages__item-message--third {
+    width: 170px;
+  }
+
+  .advantages__item-message--forth {
+    width: 145px;
+  }
+
+  .advantages__item-message--fifth {
+    width: 180px;
   }
 
   .advantages__item-picture {
@@ -150,32 +199,36 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    height: auto;
   }
 
   .advantages__user-question .advantages__item-title--enlarged {
     font-size: 30px;
-    padding-top: 56px;
-    padding-bottom: 24px;
+    padding-top: 58px;
+    padding-bottom: 22px;
+    width: 600px;
+  }
+
+  .advantages__item-message-question {
+    line-height: 24px;
+    width: 450px;
   }
 
   .advantages__find-button {
     width: 458px;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 }
 
 @media (min-width: @desktop) {
   .advantages__item--emphasized .advantages__item-title {
-    padding-top: 52px;
     font-size: 21px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 8px;
+    padding: 52px 120px 8px 120px;
   }
 
   .advantages__item--emphasized .advantages__item-message {
     padding-bottom: 38px;
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
   .advantages__item-title {
@@ -193,19 +246,42 @@
     padding-right: 30px;
   }
 
-  .mobile-br,
-  .tablet-br {
-    display: none;
+  .advantages__item-message--first {
+    width: 270px;
+  }
+
+  .advantages__item-message--second {
+    width: 230px;
+  }
+
+  .advantages__item-message--third {
+    width: 290px;
+  }
+
+  .advantages__item-message--forth {
+    width: 270px;
+  }
+
+  .advantages__item-message--fifth {
+    width: 270px;
+  }
+
+  .advantages__item-number {
+    padding-top: 3px;
+    padding-bottom: 12px;
+  }
+
+  .advantages__item-message--padding-more {
+    padding-top: 7px;
   }
 
   .advantages__user-question .advantages__item-message-question {
-    padding-left: 380px;
-    padding-right: 380px;
     padding-bottom: 46px;
     line-height: 23px;
+    width: 400px;
   }
 
   .advantages__find-button {
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 }

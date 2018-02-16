@@ -1,7 +1,7 @@
 .truetown {
   background-color: white;
   padding-left: 60px;
-  padding-bottom: 36px;
+  padding-bottom: 39px;
 }
 
 .truetown__item {
@@ -14,7 +14,7 @@
   text-align: left;
   font-size: 18px;
   font-weight: bold;
-  margin: 33px 0 0 0;
+  margin: 32px 0 0 0;
   padding-left: 10px;
 }
 
@@ -28,11 +28,16 @@
   line-height: 20px;
 }
 
+.truetown__item--food {
+  padding-right: 20px;
+}
+
 @media (min-width: @tablet) {
   .truetown {
     display: flex;
     padding-left: 0;
     width: 100%;
+    padding-bottom: 37px;
   }
 
   .truetown__item {
@@ -51,14 +56,26 @@
     text-align: center;
     margin-top: 0;
     font-size: 14px;
-    padding-top: 20px;
+    padding-top: 22px;
     line-height: 21px;
     padding-bottom: 24px;
   }
 
+  .truetown__item--food .truetown__item-message {
+    width: 155px;
+  }
+
+  .truetown__item--souvenirs .truetown__item-message {
+    width: 180px;
+  }
+
+  .truetown__item--home .truetown__item-message {
+    width: 160px;
+  }
+
   .truetown__item--food {
     background: url("../img/icon-burger.svg") no-repeat center 60px;
-    justify-content: center;
+    padding: 0;
   }
 
   .truetown__item--souvenirs {
@@ -72,7 +89,23 @@
 }
 
 @media (min-width: @desktop) {
+  .truetown {
+    padding-bottom: 33px;
+  }
+
   .truetown__item-message {
     padding-bottom: 50px;
+  }
+
+  .truetown__item--food .truetown__item-message {
+    width: 290px;
+  }
+
+  .truetown__item--souvenirs .truetown__item-message {
+    width: 250px;
+  }
+
+  .truetown__item--home .truetown__item-message {
+    width: 290px;
   }
 }
